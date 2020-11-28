@@ -1,0 +1,34 @@
+<html>
+	<head>
+
+		<title> home </title>
+	</head>
+
+	<body>
+		<h1> IOT PROJECT TAKE HOME EXAM </h1>
+
+		<hr>
+		<h3> 20172256 유호성 </h3>
+
+		<h1>Taking Picture </h1>
+		<hr>
+		<button> <a href = "{{url_for('taking_picture')}}"> Taking Picture </a></button> </br>
+		<img src="{{url_for('static', filename='image/picture.jpg')}}" alt="" >
+
+
+		<h1> 7-segments Control </h1>
+		<hr>
+		<form method="POST">
+			<input name="SEGMENT", type ="text", value="숫자 한 개를 입력하세요"/>
+			<input type="submit", id="form1", name="form1"/> </form>
+
+		
+		<h1> LCD context Control </h1>
+		<hr>
+		<form method="POST">
+			<input name="LCD", type="text", value="문자열을 입력하세요" />
+			<input type="submit", id="form2", name="form2"/> </form>
+
+	</body>
+</html>
+
